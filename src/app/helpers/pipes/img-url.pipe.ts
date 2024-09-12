@@ -8,7 +8,8 @@ export class ImgUrlPipe implements PipeTransform {
 
   transform(value: string | null): string |null{
    
-    return value? `https://icherniakov.ru/yt-course/${value}`:null;
+    
+    return value? `https://icherniakov.ru/yt-course/${value}`: 'assets/images/default_avatar.jpg';
   }
 
 }
