@@ -13,4 +13,8 @@ export class ProfileService {
   getTestAccounts(){
    return this.http.get<Profile[]>(apiConstants.testAccount)
   }
+
+  geMe(){
+    return this.http.get<Profile>(apiConstants.meAccount)
+  }
 }

@@ -24,9 +24,9 @@ export class LoginPageComponent {
   onSubmit(){
 
     if(this.form.valid){
-      console.log(this.form.value);
+      
       this.authService.login(this.form.value)
-       .subscribe(res=>{
+       .subscribe(()=>{
           this.router.navigate([''])
        }); 
     }else{
